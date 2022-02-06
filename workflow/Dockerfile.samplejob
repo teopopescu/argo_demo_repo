@@ -1,0 +1,7 @@
+FROM python:3.8.8
+
+COPY sample_statement.py .
+
+
+CMD ["python", "sample_statement.py"]
+
