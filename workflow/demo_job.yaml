@@ -9,6 +9,8 @@ spec:
     spec:
       containers:
       - name: sample-job-for-model-training
-        image: sample_job
+        image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+        ports:
+          - containerPort: 80
         imagePullPolicy: Never
       restartPolicy: Never

@@ -12,4 +12,4 @@ spec:
   templates:
   - name: sample-workflow
     container:
-      image: sample_job
+      image: gcr.io/heptio-images/ks-guestbook-demo:0.2
