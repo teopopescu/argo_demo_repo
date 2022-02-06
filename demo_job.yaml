@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sample-job-for-model-training
+spec:
+  template:
+    metadata:
+      name: sample-job-for-model-training
+    spec:
+      containers:
+      - name: sample-job-for-model-training
+        image: sample_job
+        imagePullPolicy: Never
+      restartPolicy: Never
